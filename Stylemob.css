@@ -1,0 +1,29 @@
+#logo img{
+    height: 40px;
+    width: 30px;
+}
+.item a{
+    font-size: 1rem;
+}
+#navbar{
+    flex-direction: column;
+}
+#navbar::before{
+    height: 120px;
+}
+/* Home section */
+#Home{
+    padding: 5px 35px;
+}
+#Home::before{
+    height: 430px;
+}
+/* Service section */
+.service{
+    flex-direction: column;
+}
+
+/* client section */
+.client img{
+    height: 15%;
+}

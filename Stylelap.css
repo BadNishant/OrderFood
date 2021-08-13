@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#logo img{
+    height: 50px;
+    width: 40px;
+    padding: 8px 25px;
+    border-radius: 100%;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    height: 70px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.item a{
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.3rem;
+    display: block;
+    color: white;
+}
+
+.item a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+}
+
+/* Home Section */
+#Home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    height: 330px; 
+    justify-content: center;
+    align-items: center;
+}
+#Home::before{
+    position: absolute;
+    content: "";
+    background: url("/Home.jpg") no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 400px;
+    width: 100%;
+    opacity: 0.9;
+    z-index: -1;
+}
+#Welcome{
+    font-size: 2.5rem;
+    color: white;
+    padding: 15px;
+}
+#Home p{
+    color: white;
+}
+.btn{
+    margin: 12px;
+    padding: 5px 15px;
+    background-color: rgb(196, 196, 46);
+    cursor: pointer;
+}
+/* Services */
+.service-cont{
+    position: relative;
+}
+.service-cont h1{
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+
+}
+.service{
+    display: flex;
+}
+
+.service .box img{
+    height: 100px;
+    border-radius: 80%;
+    display: block;
+    margin: auto;
+}
+.service .box{
+    border: 2px solid red;
+    margin: 5px;
+    border-radius: 25px;
+    background-color: rgb(194, 125, 113);
+    padding: 15px;
+}
+.box h2{
+    display:block;
+    text-align: center;
+}
+/* Client section */
+.client-cont{
+    position: relative;
+}
+.client-cont h1{
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 30px 50px;
+}
+.client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client img{
+    width: 12.5%;
+    border-radius: 40%;
+    padding: 28px 20px;
+}
+.client-cont::before{
+    content: "";
+    background: url("/Box_back2.jpg");
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    opacity: 0.5;
+}
+/* .client-cont{
+    padding-top: 20px;
+} */
+/* Contact us */
+.contact-cont{
+    position: relative;
+}
+
+.contact-us{
+    display: flex;
+    justify-content: center;
+    
+} 
+.contact-cont h1{
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 2.5rem;
+
+}
+
+.contact-cont::before{
+    content: "";
+    background: url("/Contact\ Us.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.7;
+    z-index: -1;
+}
+/* .contact-cont{
+     padding-top: 45px; 
+} */
+.contact input{
+    padding: 5px;
+    border-radius: 5%; 
+    width: 100%;
+}
+.contact label{
+    position: relative;
+    font-size: 1.3rem;
+}
+.copyright{
+    display: block;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+.bt1{
+    display: flex;
+    justify-content: center;
+}
+.btn1{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: tomato;
+    border-radius: 20px;
+    padding: 5px;
+    width: 250px;
+    cursor: pointer;
+}
+
